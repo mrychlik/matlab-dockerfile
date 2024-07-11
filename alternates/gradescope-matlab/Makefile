@@ -20,7 +20,7 @@ grade:
 	cat autograder/results/results.json
 	printf "\n\n"
 
-base-image:
+base-image: Dockerfile.gradescope-matlab-base
 	docker build -f Dockerfile.gradescope-matlab-base -t gradescope-matlab-base .
 
 grader-image: base-image
