@@ -15,11 +15,10 @@ RESULTS_FILE=./autograder/results/results.json
 grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
-	chmod -R 666 autograder/results/
 	touch $(RESULTS_FILE)
 	chmod +w $(RESULTS_FILE)
 	docker run -ti \
-		-v `pwd`/autograder/results:/autograder/results \
+		-v `pwd`/autograder/results:/autograder/results:Z \
 		-e LICENSE_TOKEN='$(MLM_LICENSE_TOKEN)' \
 	       localhost/gradescope-matlab-autograder:latest
 	printf "\n\n"
