@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-
-LICENSE_TOKEN=$(< cat /home/marek/Documents/MLM_LICENSE_TOKEN.txt)
-
 # Set up autograder files
 
 cp /autograder/submission/prog.m /autograder/source/prog.m
