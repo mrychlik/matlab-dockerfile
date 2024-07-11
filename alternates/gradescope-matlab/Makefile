@@ -15,8 +15,9 @@ RESULTS_FILE=./autograder/results/results.json
 grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
+	chmod -R 755 autograder/results/
 	touch $(RESULTS_FILE)
-	chmod +w $(RESULTS_FILE)
+	chmod +755 $(RESULTS_FILE)
 	docker run -ti \
 		-v `pwd`/autograder/results:/autograder/results:Z \
 		-e LICENSE_TOKEN='$(MLM_LICENSE_TOKEN)' \
