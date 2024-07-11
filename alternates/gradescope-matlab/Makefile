@@ -16,7 +16,7 @@ grade:
 	mkdir -p autograder/results/
 	chmod +wx autograder/results/
 	docker run -ti \
-		-v `pwd`/autograder/results:/autograder/results \
+		-v /autograder/results:`pwd`/autograder/results \
 		-e LICENSE_TOKEN='$(MLM_LICENSE_TOKEN)' \
 	       localhost/gradescope-matlab-autograder:latest
 	printf "\n\n"
