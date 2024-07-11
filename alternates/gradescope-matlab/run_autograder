@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Set up autograder files
 mkdir -p autograder/results
+cd /autograder
 matlab-batch -licenseToken "$LICENSE_TOKEN" "autograde_prog"
 
