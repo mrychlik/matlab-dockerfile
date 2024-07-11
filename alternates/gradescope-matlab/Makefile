@@ -27,7 +27,7 @@ grader-image: base-image
 	docker build -f Dockerfile.grader-image -t gradescope-matlab .
 
 tag: 
-	docker image tag rychlik/gradescope-matlab rychlik/autograders:matlab
+	docker image tag localhost/gradescope-matlab rychlik/autograders:matlab
 
 push: tag
 	docker push rychlik/autograders:matlab
