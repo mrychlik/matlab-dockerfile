@@ -12,7 +12,10 @@
 grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
-	./run_autograder 
+	docker run -ti \
+		-v `pwd`/autograder/results:/autograder/results \
+		localhost/gradescope-matlab-autograder:latest \
+		run_autograder 
 	printf "\n\n"
 	cat autograder/results/results.json
 	printf "\n\n"
