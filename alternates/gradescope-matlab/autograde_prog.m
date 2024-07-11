@@ -57,5 +57,7 @@ end
 results = struct('tests',tests);
 
 json_results = jsonencode(results,'PrettyPrint',true)
-writelines(json_results, json_filename);
-
+fid = fopen(json_filename,'w');
+disp(['FileId:"',fid,'"']);
+fwrite(fid,json_results);
+fclose(fid);
