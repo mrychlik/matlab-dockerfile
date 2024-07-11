@@ -15,7 +15,7 @@ grade:
 	docker run -ti \
 		-v `pwd`/tests/$(s):/autograder/submission \
 		-v `pwd`/autograder/results:/autograder/results \
-		localhost/gradescope-matlab /autograder/run_autograder
+		localhost/gradescope-matlab-autograder /autograder/run_autograder
 	printf "\n\n"
 	cat autograder/results/results.json
 	printf "\n\n"
