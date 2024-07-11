@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 # Set up autograder files
-
-cp /autograder/submission/prog.m /autograder/source/prog.m
-
 cd /autograder/source
 
 #sudo adduser runner --no-create-home --disabled-password --gecos ""
