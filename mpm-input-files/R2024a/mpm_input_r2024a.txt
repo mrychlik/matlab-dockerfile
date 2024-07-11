@@ -98,7 +98,7 @@
 #product.HDL_Coder
 #product.HDL_Verifier
 #product.Image_Acquisition_Toolbox
-#product.Image_Processing_Toolbox
+product.Image_Processing_Toolbox
 #product.Industrial_Communication_Toolbox
 #product.Instrument_Control_Toolbox
 #product.LTE_Toolbox
