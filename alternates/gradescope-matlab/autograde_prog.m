@@ -7,7 +7,6 @@
 
 
 clear all;
-addpath('..')
 
 filename = "prog.m" % Assignment file name
 
