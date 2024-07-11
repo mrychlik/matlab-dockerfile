@@ -31,3 +31,7 @@ the docker image directory /tmp to the host directory /tmp.
 
 Note that this example requires obtaining the batch token from MathWorks to be able to execute matlab non-interactively. In this example, we
 assumed that the token is stored in the file $HOME/MLM_LICENSE_TOKEN.txt on the host running docker or podman.
+
+## Extra packages
+The Dockerfile passes the list of MATLAB products in variable MATLAB_PRODUCT_LIST.
+In our file, we added Image_Processing_Toolbox along with MATLAB as the package to be installed in the docker image.
