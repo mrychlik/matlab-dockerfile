@@ -14,6 +14,7 @@
 ARG MATLAB_RELEASE=r2024a
 
 # Specify the list of products to install into MATLAB.
+# NOTE: Parallel_Computing_Toolbox is needed for matlab-batch to work?
 ARG MATLAB_PRODUCT_LIST="MATLAB Image_Processing_Toolbox Parallel_Computing_Toolbox"
 
 # Specify MATLAB Install Location.
