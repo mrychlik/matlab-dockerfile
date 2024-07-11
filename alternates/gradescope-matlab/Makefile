@@ -18,7 +18,7 @@ grade:
 	touch $(RESULTS_FILE)
 	chmod -R 755 autograder/results/
 	docker run -ti \
-		-v `pwd`/autograder/results:/autograder/results:Z \
+		-v `pwd`/autograder/results:/autograder/results:z \
 		-e LICENSE_TOKEN='$(MLM_LICENSE_TOKEN)' \
 	       localhost/gradescope-matlab-autograder:latest
 	printf "\n\n"
