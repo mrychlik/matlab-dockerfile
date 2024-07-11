@@ -14,7 +14,7 @@ MLM_LICENSE_TOKEN=$(shell cat /home/marek/Documents/MLM_LICENSE_TOKEN.txt)
 grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
-	docker run -u marek -ti \
+	docker run -ti \
 		-v `pwd`/autograder/results:/autograder/results \
 		-e LICENSE_TOKEN='$(MLM_LICENSE_TOKEN)' \
 	       localhost/gradescope-matlab-autograder:latest
