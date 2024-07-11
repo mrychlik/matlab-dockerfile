@@ -7,6 +7,7 @@
 
 
 clear all;
+print(path);
 addpath('..')
 
 filename = "prog.m" % Assignment file name
