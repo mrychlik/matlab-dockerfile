@@ -11,20 +11,20 @@ Edit configuration file (../../mpm-input-files/r2024a), uncommenting required pa
 ## Build the containter
 At shell prompt, type:
 ```bash
-docker build -t gradescrope-matlab:r2024a .
+docker build -t gradescope-matlab:r2024a .
 ```
 
 ## Run the container
 Using docker or podman:
 ```bash
-docker run --init --rm gradescrope-matlab:r2024a matlab-batch -licenseToken "$(< /home/marek/Documents/MLM_LICENSE_TOKEN.txt)" "rand"
+docker run --init --rm gradescope-matlab:r2024a matlab-batch -licenseToken "$(< /home/marek/Documents/MLM_LICENSE_TOKEN.txt)" "rand"
 ```
 
 This will generate a single random number.
 
 A more practical example:
 ```bash
-docker run --init --rm -v /tmp:/tmp gradescrope-matlab:r2024a matlab-batch -licenseToken "$(< $HOME/Documents/MLM_LICENSE_TOKEN.txt)" "imwrite(checkerboard(64),'/tmp/foo.png','PNG')"
+docker run --init --rm -v /tmp:/tmp gradescope-matlab:r2024a matlab-batch -licenseToken "$(< $HOME/Documents/MLM_LICENSE_TOKEN.txt)" "imwrite(checkerboard(64),'/tmp/foo.png','PNG')"
 ```
 This writes an image to a file /tmp/foo.png on the host file system, since we mapped 
 the docker image directory /tmp to the host directory /tmp.
