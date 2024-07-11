@@ -15,7 +15,8 @@ grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
 	docker run -ti \
-	       -v `pwd`/autograder/results:/autograder/results \
+		-v `pwd`/autograder/results:/autograder/results \
+		-e LICENSE_TOKEN "$(LICENSE_TOKEN)"
 	       localhost/gradescope-matlab-autograder:latest
 	printf "\n\n"
 	cat autograder/results/results.json
