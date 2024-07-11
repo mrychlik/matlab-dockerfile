@@ -11,7 +11,7 @@ addpath('/autograder/source');
 filename = "prog.m" % Assignment file name
 
 
-json_filename = "/autograder/results/results.json" % Change to "results.json" when testing locally
+json_filename = "/autograder/results/results.json" 
 results_exemplar = jsondecode(fileread("results_exemplar.json"));
 
 
