@@ -6,4 +6,4 @@ COPY run_autograder /autograder/
 COPY results_exemplar.json /autograder/source
 COPY autograde_prog.m /autograder/source/
 COPY run_autograder /autograder
-ENTRYPOINT run_autograder
+ENTRYPOINT /autograder/run_autograder
