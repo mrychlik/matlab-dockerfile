@@ -48,10 +48,9 @@ for j = 1:numel(test_cases)
         end
     catch
         cur_test.output = "Test resulted in an error.";
-        end_try_catch;
-
-        tests(j) = cur_test;
     end
+
+    tests(j) = cur_test;
 end
 
 results = struct('tests',tests);
