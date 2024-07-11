@@ -12,7 +12,7 @@
 grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
-	run_autograder 
+	./run_autograder 
 	printf "\n\n"
 	cat autograder/results/results.json
 	printf "\n\n"
