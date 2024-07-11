@@ -14,7 +14,7 @@
 ARG MATLAB_RELEASE=r2024a
 
 # Specify the list of products to install into MATLAB.
-ARG MATLAB_PRODUCT_LIST="MATLAB"
+ARG MATLAB_PRODUCT_LIST="MATLAB,Image_Processing_Toolbox"
 
 # Specify MATLAB Install Location.
 ARG MATLAB_INSTALL_LOCATION="/opt/matlab/${MATLAB_RELEASE}"
