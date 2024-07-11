@@ -35,7 +35,6 @@ grader-image: base-image
 tag: 
 	docker image tag \
 		localhost/gradescope-matlab-autograder \
-		rychlik/gradescope-matlab-autograder
 
 push: tag
 	podman login docker.io
