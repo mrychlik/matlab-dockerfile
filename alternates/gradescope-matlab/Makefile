@@ -10,9 +10,8 @@
 # Grade with reasonable simulation of Gradescope's script setup
 grade:
 	rm -rf autograder
-	mkdir autograder/
-	mkdir autograder/results/
-	docker run -ti \
+	mkdir -p autograder/results/
+	docker run -ti --privileged \
 		-v `pwd`/tests/$(s):/autograder/submission \
 		-v `pwd`/autograder/results:/autograder/results \
 		localhost/gradescope-matlab-autograder /autograder/run_autograder
