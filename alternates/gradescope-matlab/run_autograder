@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Set up autograder files
 mkdir -p /autograder/results
-#sudo chown -R matlab:matlab /autograder/results
+sudo chown -R matlab:matlab /autograder/results
 cd /autograder
 matlab-batch -licenseToken "$LICENSE_TOKEN" "autograde_prog"
 
