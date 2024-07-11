@@ -6,7 +6,6 @@
 %% Author: Marek Rychlik
 
 
-clear all;
 addpath('./autograder/source');
 
 filename = "prog.m" % Assignment file name
