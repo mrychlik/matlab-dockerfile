@@ -22,7 +22,7 @@ grade:
 		-e LICENSE_TOKEN='$(MLM_LICENSE_TOKEN)' \
 	       localhost/gradescope-matlab-autograder:latest
 	printf "\n\n"
-	cat autograder/results/results.json
+	cat $(RESULTS_FILE)
 	printf "\n\n"
 
 base-image: Dockerfile.gradescope-matlab-base
