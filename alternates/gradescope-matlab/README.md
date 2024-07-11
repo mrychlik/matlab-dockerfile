@@ -23,7 +23,7 @@ This will generate a single random number.
 
 A more practical example:
 ```bash
-podman run --init --rm -v /tmp:/tmp gradescrope-matlab:r2024a matlab-batch -licenseToken "$(< $HOME/Documents/MLM_LICENSE_TOKEN.txt)" "imwrite(eye(3),'/tmp/foo.png','PNG')"
+docker run --init --rm -v /tmp:/tmp gradescrope-matlab:r2024a matlab-batch -licenseToken "$(< $HOME/Documents/MLM_LICENSE_TOKEN.txt)" "imwrite(eye(3),'/tmp/foo.png','PNG')"
 ```
 This writes an image to a file /tmp/foo.png on the host file system, since we mapped 
 the docker image directory /tmp to the host directory /tmp.
