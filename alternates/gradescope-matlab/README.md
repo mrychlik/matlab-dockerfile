@@ -29,4 +29,4 @@ This writes an image to a file /tmp/foo.png on the host file system, since we ma
 the docker image directory /tmp to the host directory /tmp.
 
 Note that this example requires obtaining the batch token from MathWorks to be able to execute matlab non-interactively. In this example, we
-assumed that the token is stored in the file $HOME/MLM_LICENSE_TOKEN.txt on the host running MATLAB.
+assumed that the token is stored in the file $HOME/MLM_LICENSE_TOKEN.txt on the host running docker.
