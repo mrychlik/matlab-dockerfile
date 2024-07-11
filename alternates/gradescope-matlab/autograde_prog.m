@@ -7,7 +7,6 @@
 
 
 clear all;
-pkg load json
 
 filename = "prog.m" % Assignment file name
 
