@@ -32,25 +32,26 @@ test_cases(2).visibility = "visible"
 test_cases(2).weight = 10;
 
 for j = 1:numel(test_cases)
-  cur = test_cases(j);
-  cur_test = results_exemplar.tests;
-  try
-    ret_val = feval(cur.fun,cur.args{:});
-  if ret_val == cur.expect 
-    cur_test.score =  cur.weight;
-    cur_test.output = "Test passed"
-  else
-    cur.score = 0;
-    cur.output = "Invalid output";
-    cur_test.name = cur.name;
-    cur_test.score = cur.score;
-    cur_test.max_score = cur.weight;
-  end
-  catch
-    cur_test.output = "Test resulted in an error.";
-  end_try_catch;
+    cur = test_cases(j);
+    cur_test = results_exemplar.tests;
+    try
+        ret_val = feval(cur.fun,cur.args{:});
+        if ret_val == cur.expect 
+            cur_test.score =  cur.weight;
+            cur_test.output = "Test passed"
+        else
+            cur.score = 0;
+            cur.output = "Invalid output";
+            cur_test.name = cur.name;
+            cur_test.score = cur.score;
+            cur_test.max_score = cur.weight;
+        end
+    catch
+        cur_test.output = "Test resulted in an error.";
+        end_try_catch;
 
-  tests(j) = cur_test;
+        tests(j) = cur_test;
+    end
 end
 
 results = struct('tests',tests);
