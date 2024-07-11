@@ -10,11 +10,13 @@
 
 
 MLM_LICENSE_TOKEN=$(shell cat /home/marek/Documents/MLM_LICENSE_TOKEN.txt)
+RESULTS_FILE=autograder/results/results.json
 
 grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
-	touch autograder/results/results.json
+	touch $$RESULTS_FILE
+	chmod +w $$RESULTS_FILE
 	docker run -ti \
 		-v `pwd`/autograder/results:/autograder/results \
 		-e LICENSE_TOKEN='$(MLM_LICENSE_TOKEN)' \
