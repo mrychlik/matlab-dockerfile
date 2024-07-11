@@ -13,7 +13,7 @@ grade:
 	mkdir -p autograder/results/
 	docker run -ti \
 		-v `pwd`/autograder/results:/autograder/results \
-		localhost/gradescope-matlab-autograder \
+		gradescope-matlab-autograder \
 		matlab-batch \
 		-licenseToken "$(< /home/marek/Documents/MLM_LICENSE_TOKEN.txt)" \
 		"rand"
