@@ -21,7 +21,7 @@ grade:
 	printf "\n\n"
 
 base-image: Dockerfile.gradescope-matlab-base
-	docker build -f Dockerfile.gradescope-matlab-base -t gradescope-matlab-base .
+	docker build -f Dockerfile.gradescope-matlab-base -t localhost/gradescope-matlab-base .
 
 grader-image: base-image
 	docker build -f Dockerfile.grader-image -t gradescope-matlab-autograder .
