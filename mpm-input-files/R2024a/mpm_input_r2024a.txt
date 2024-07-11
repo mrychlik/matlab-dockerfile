@@ -171,7 +171,7 @@ product.Image_Processing_Toolbox
 #product.SoC_Blockset
 #product.Spreadsheet_Link
 #product.Stateflow
-#product.Statistics_and_Machine_Learning_Toolbox
+product.Statistics_and_Machine_Learning_Toolbox
 #product.Symbolic_Math_Toolbox
 #product.System_Composer
 #product.System_Identification_Toolbox
