@@ -39,4 +39,4 @@ tag:
 
 push: tag
 	podman login docker.io
- 	docker push docker.io/rychlik/gradescope-matlab-autograder
+ 	docker push docker.io/rychlik/gradescope-matlab-autograder:latest
