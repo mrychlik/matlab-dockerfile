@@ -20,7 +20,7 @@ grade:
 		localhost/gradescope-matlab-autograder:latest \
 		matlab-batch \
 		-licenseToken "$(LICENSE_TOKEN)" \
-		"rand"
+		"autograder_prog"
 	printf "\n\n"
 	cat autograder/results/results.json
 	printf "\n\n"
