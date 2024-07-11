@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM gradescope-matlab-base
 
-RUN mkdir -p /autograder/source
+RUN  mkdir -p /autograder/source
 COPY run_autograder /autograder/
 COPY results_exemplar.json /autograder/source
 COPY autograde_prog.m /autograder/source/
