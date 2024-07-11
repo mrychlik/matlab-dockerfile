@@ -11,7 +11,7 @@
 grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
-	docker run -ti --privileged \
+	docker run -ti \
 		-v `pwd`/autograder/results:/autograder/results \
 		localhost/gradescope-matlab-autograder \
 		matlab-batch \
