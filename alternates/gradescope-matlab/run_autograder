@@ -11,6 +11,7 @@ cd /autograder/source
 #sudo -u runner octave autograde_prog.m
 docker run -ti \
        -v `pwd`/autograder/results:/autograder/results \
+       -e LICENSE_TOKEN="$LICENSE_TOKEN" \
        localhost/gradescope-matlab-autograder:latest \
        matlab-batch \
        -licenseToken "$(LICENSE_TOKEN)" \
