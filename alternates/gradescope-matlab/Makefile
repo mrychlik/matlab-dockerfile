@@ -12,7 +12,6 @@ grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
 	docker run -ti --privileged \
-		-v `pwd`/tests/$(s):/autograder/submission \
 		-v `pwd`/autograder/results:/autograder/results \
 		localhost/gradescope-matlab-autograder /autograder/run_autograder
 	printf "\n\n"
