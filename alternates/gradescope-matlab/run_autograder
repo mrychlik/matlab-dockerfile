@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-LICENSE_TOKEN := $(shell cat /autograder/MLM_LICENSE_TOKEN.txt)
+LICENSE_TOKEN=$(< cat /autograder/MLM_LICENSE_TOKEN.txt)
 
 # Set up autograder files
 
