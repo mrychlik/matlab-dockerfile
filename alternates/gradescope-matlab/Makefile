@@ -15,6 +15,7 @@ RESULTS_FILE=./autograder/results/results.json
 grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
+	chmod -R 666 autograder/results/
 	touch $(RESULTS_FILE)
 	chmod +w $(RESULTS_FILE)
 	docker run -ti \
