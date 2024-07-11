@@ -7,7 +7,7 @@
 
 
 addpath('/autograder/source');
-
+disp(path);
 filename = "prog.m" % Assignment file name
 
 
