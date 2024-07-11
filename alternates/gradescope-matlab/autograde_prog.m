@@ -15,6 +15,8 @@ filename = "prog.m" % Assignment file name
 json_filename = "results/results.json" 
 results_exemplar = jsondecode(fileread("results_exemplar.json"));
 
+disp('Results_Exemplar');
+disp(results_exemplar);
 
 
 test_cases(1).name = "One";
