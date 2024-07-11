@@ -37,5 +37,6 @@ tag:
 		localhost/gradescope-matlab-autograder \
 		rychlik/autograders:gradescope-matlab-autograder
 
-push: tag
- 	docker push rychlik/gradescope-matlab-autograder
+push: 
+	podman login docker.io
+ 	docker push rychlik/autograders:gradescope-matlab-autograder
