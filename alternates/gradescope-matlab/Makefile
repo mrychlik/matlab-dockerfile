@@ -6,8 +6,12 @@
 # for now `grade` is the default target, so
 #   make s=sq/s1
 # suffices
+LICENSE_TOKEN := $(shell cat /home/marek/Documents/MLM_LICENSE_TOKEN.txt)
+
 
 # Grade with reasonable simulation of Gradescope's script setup
+
+
 grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
@@ -15,7 +19,7 @@ grade:
 		-v `pwd`/autograder/results:/autograder/results \
 		localhost/gradescope-matlab-autograder:latest \
 		matlab-batch \
-		-licenseToken "$(< /home/marek/Documents/MLM_LICENSE_TOKEN.txt)" \
+		-licenseToken "$(LICENSE_TOKEN)" \
 		"rand"
 	printf "\n\n"
 	cat autograder/results/results.json
