@@ -12,6 +12,7 @@
 MLM_LICENSE_TOKEN=$(shell cat /home/marek/Documents/MLM_LICENSE_TOKEN.txt)
 
 grade:
+	chown -R $USER autograder
 	rm -rf autograder
 	mkdir -p autograder/results/
 	docker run -ti \
