@@ -3,9 +3,9 @@
 cd /autograder/source
 
 #sudo adduser runner --no-create-home --disabled-password --gecos ""
-
 #Secured version of the runner
 #sudo -u runner octave autograde_prog.m
+
 docker run -ti \
        -v `pwd`/autograder/results:/autograder/results \
        localhost/gradescope-matlab-autograder:latest \
