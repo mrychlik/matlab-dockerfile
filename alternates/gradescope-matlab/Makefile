@@ -38,4 +38,4 @@ tag:
 		rychlik/autograders:gradescope-matlab-autograder
 
 push: tag
- 	docker push rychlik/autograders:gradescope-matlab-autograder
+ 	docker push rychlik/gradescope-matlab-autograder
