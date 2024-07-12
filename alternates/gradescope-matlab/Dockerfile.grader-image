@@ -25,11 +25,6 @@ RUN chmod +x /autograder/run_autograder
 
 # The base image defines the CMD and ENTRYPOINT, so don't redefine those
 
-
-# syntax=docker/dockerfile:1
-FROM 
-
-RUN  sudo mkdir -p /autograder/source
 COPY run_autograder /autograder/
 COPY results_exemplar.json /autograder
 COPY autograde_prog.m /autograder
