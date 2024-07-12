@@ -21,7 +21,7 @@ grade:
 		-u $(id -u):$(id -g) \
 		-v `pwd`/autograder/results:/autograder/results:Z \
 		-e LICENSE_TOKEN='$(MLM_LICENSE_TOKEN)' \
-		 docker.io/rychlik/gradescope-matlab-autograder:latest
+		 localhost/gradescope-matlab-autograder:latest
 	printf "\n\n"
 	cat $(RESULTS_FILE)
 	printf "\n\n"
