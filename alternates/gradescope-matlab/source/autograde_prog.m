@@ -41,7 +41,7 @@ for j = 1:numel(test_cases)
         ret_val = feval(cur.fun,cur.args{:});
         if ret_val == cur.expect 
             cur_test.score =  cur.weight;
-            cur_test.output = "Test passed"
+            cur_test.output = "Test passed";
         else
             cur.score = 0;
             cur.output = "Invalid output";
@@ -58,7 +58,7 @@ end
 
 results = struct('tests',tests);
 
-json_results = jsonencode(results,'PrettyPrint',true)
+json_results = jsonencode(results,'PrettyPrint',true);
 fid = fopen(json_filename,'w');
 disp(['FileId:"',fid,'"']);
 fwrite(fid,json_results);
