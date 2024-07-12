@@ -42,7 +42,6 @@ tag-grader-image:
 		localhost/gradescope-matlab-autograder \
 		docker.io/rychlik/gradescope-matlab-autograder:latest
 
-
 push-base-image: tag-base-image
 	podman login docker.io
 	podman push docker.io/rychlik/gradescope-matlab-base:latest
