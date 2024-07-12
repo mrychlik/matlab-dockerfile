@@ -1,6 +1,7 @@
 # You can change these variables to use a different base image, but
 # you must ensure that your base image inherits from one of ours.
 # You can also override these at build time with --build-arg flags
+
 ARG BASE_REPO=rychlik/gradescope-matlab-base
 ARG TAG=latest
 
@@ -11,7 +12,7 @@ ADD source /autograder/source
 RUN cp /autograder/source/run_autograder /autograder/run_autograder
 
 # Ensure that scripts are Unix-friendly and executable
-RUN dos2unix /autograder/run_autograder /autograder/source/setup.sh
+RUN dos2unix ./run_autograder /autograder/source/setup.sh
 RUN chmod +x /autograder/run_autograder
 
 # Do whatever setup was needed in setup.sh, including installing apt packages
