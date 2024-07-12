@@ -16,7 +16,7 @@ COPY source/run_autograder /autograder
 RUN sudo chmod +x /autograder/run_autograder
 COPY source/autograde_prog.m /autograder
 COPY source/autograde_prog.m /autograder
-COPY source/results_examplar.json /autograder
+COPY source/results_exemplar.json /autograder
 
 # Do whatever setup was needed in setup.sh, including installing apt packages
 # Cleans up the apt cache afterwards in the same step to keep the image small
