@@ -9,7 +9,7 @@
 addpath('/autograder/source');
 %disp(['Path:',path]);
 %disp(['Working directory',pwd]);
-filename = "prog.m" % Assignment file name;
+filename = "prog.m"; % Assignment file name;
 
 
 json_filename = "results/results.json";
