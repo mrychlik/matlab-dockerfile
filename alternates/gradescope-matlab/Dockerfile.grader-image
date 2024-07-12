@@ -9,7 +9,7 @@ FROM ${BASE_REPO}:${TAG}
 
 ADD source /autograder/source
 RUN sudo apt update
-RUN sudo apt install dos2unix
+RUN sudo apt-get install dos2unix
 
 # Ensure that scripts are Unix-friendly and executable
 COPY source/run_autograder /autograder
