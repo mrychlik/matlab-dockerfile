@@ -14,6 +14,7 @@ RUN sudo apt-get install dos2unix
 # Ensure that scripts are Unix-friendly and executable
 COPY source/run_autograder /autograder
 RUN sudo chmod +x /autograder/run_autograder
+COPY source/autograder_prog /autograder
 
 # Do whatever setup was needed in setup.sh, including installing apt packages
 # Cleans up the apt cache afterwards in the same step to keep the image small
