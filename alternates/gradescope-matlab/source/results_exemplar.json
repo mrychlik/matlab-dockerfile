@@ -1,0 +1,12 @@
+{
+    "tests": 
+    [
+	{
+            "score": 2.0,
+            "max_score": 2.0, 
+            "output": "Giant multiline string that will be placed in a <pre> tag and collapsed by default",
+            "visibility": "visible", 
+            "extra_data": {} 
+	}
+    ]
+}
