@@ -12,7 +12,7 @@ RUN sudo apt update
 RUN sudo apt install dos2unix
 
 # Ensure that scripts are Unix-friendly and executable
-RUN dos2unix source/run_autograder /autograder/source/setup.sh
+RUN dos2unix source/run_autograder /autograder
 RUN chmod +x /autograder/run_autograder
 
 # Do whatever setup was needed in setup.sh, including installing apt packages
