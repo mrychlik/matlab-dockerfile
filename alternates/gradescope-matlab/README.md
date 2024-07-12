@@ -17,7 +17,7 @@ docker build -t gradescope-matlab:r2024a .
 ## Run the container
 Using docker or podman:
 ```bash
-docker run --init --rm gradescope-matlab:r2024a matlab-batch -licenseToken "$(< /home/marek/Documents/MLM_LICENSE_TOKEN.txt)" "rand"
+docker run --init --rm gradescope-matlab:r2024a matlab-batch -licenseToken "$(< $HOME/Documents/MLM_LICENSE_TOKEN.txt)" "rand"
 ```
 
 This will generate a single random number.
