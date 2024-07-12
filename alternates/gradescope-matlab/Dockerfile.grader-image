@@ -7,7 +7,7 @@ ARG TAG=latest
 
 FROM ${BASE_REPO}:${TAG}
 
-ADD source /autograder/source
+#ADD source /autograder/source
 
 # Ensure that scripts are Unix-friendly and executable
 RUN dos2unix run_autograder /autograder/source/setup.sh
