@@ -34,6 +34,11 @@ grader-image:
 
 tag-base-image: 
 	docker image tag \
+		localhost/gradescope-matlab-base \
+		docker.io/rychlik/gradescope-matlab-base:latest
+
+tag-grader-image: 
+	docker image tag \
 		localhost/gradescope-matlab-autograder \
 		docker.io/rychlik/gradescope-matlab-base:latest
 
