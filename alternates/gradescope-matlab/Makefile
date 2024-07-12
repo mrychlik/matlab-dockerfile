@@ -29,7 +29,8 @@ base-image: Dockerfile.gradescope-matlab-base
 		-t localhost/gradescope-matlab-base .
 
 grader-image: base-image
-	docker build -f Dockerfile.grader-image -t localhost/gradescope-matlab-autograder .
+	docker build -f Dockerfile.grader-image \
+		-t localhost/gradescope-matlab-autograder .
 
 tag: 
 	docker image tag \
