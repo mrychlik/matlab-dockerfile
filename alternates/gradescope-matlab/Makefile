@@ -40,7 +40,7 @@ tag-base-image:
 tag-grader-image: 
 	docker image tag \
 		localhost/gradescope-matlab-autograder \
-		docker.io/rychlik/gradescope-matlab-base:latest
+		docker.io/rychlik/gradescope-matlab-autograder:latest
 
 
 push-base-image: tag-base-image
