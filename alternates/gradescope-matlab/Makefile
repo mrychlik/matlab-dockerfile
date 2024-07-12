@@ -35,7 +35,7 @@ grader-image:
 tag: 
 	docker image tag \
 		localhost/gradescope-matlab-autograder \
-		docker.io/rychlik/gradescope-matlab-autograder:latest
+		docker.io/rychlik/gradescope-matlab-base:latest
 
 
 push: tag
