@@ -9,7 +9,7 @@
 # Grade with reasonable simulation of Gradescope's script setup
 
 
-MLM_LICENSE_TOKEN=$(shell cat /home/marek/Documents/MLM_LICENSE_TOKEN.txt)
+MLM_LICENSE_TOKEN=$(shell cat $$HOME/Documents/MLM_LICENSE_TOKEN.txt)
 RESULTS_FILE=./autograder/results/results.json
 
 grade:
