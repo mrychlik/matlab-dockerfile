@@ -17,7 +17,6 @@ RUN sudo chmod +x /autograder/run_autograder
 
 # Do whatever setup was needed in setup.sh, including installing apt packages
 # Cleans up the apt cache afterwards in the same step to keep the image small
-RUN apt-get update
 RUN apt-get clean
 RUN sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 # You can also use RUN commands in the Dockerfile to install things
