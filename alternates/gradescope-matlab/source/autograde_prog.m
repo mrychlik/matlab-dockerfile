@@ -28,7 +28,7 @@ test_cases(1).weight = 10;
 
 
 test_cases(2).name = "Two";
-test_cases(2).fun  = 'prog',
+test_cases(2).fun  = 'prog';
 test_cases(2).args = { 2, 5, 7 };
 test_cases(2).expect = 14;
 test_cases(2).visibility = "visible";
