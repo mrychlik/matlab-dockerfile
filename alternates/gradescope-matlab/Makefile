@@ -49,6 +49,6 @@ push-base-image: tag-base-image
 
 push-grader-image: tag-grader-image
 	podman login docker.io
-	podman push docker.io/rychlik/gradescope-matlab-grader:latest
+	podman push docker.io/rychlik/gradescope-matlab-autograder:latest
 
 push: push-base-image push-grader-image
