@@ -8,7 +8,7 @@ ARG TAG=latest
 FROM ${BASE_REPO}:${TAG}
 
 ADD source /autograder/source
-RUN sudo apt-file update
+RUN sudo apt update
 RUN sudo apt install dos2unix
 
 # Ensure that scripts are Unix-friendly and executable
