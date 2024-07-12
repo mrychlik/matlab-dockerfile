@@ -9,10 +9,10 @@
 addpath('/autograder/source');
 %disp(['Path:',path]);
 %disp(['Working directory',pwd]);
-filename = "prog.m" % Assignment file name
+filename = "prog.m" % Assignment file name;
 
 
-json_filename = "results/results.json" 
+json_filename = "results/results.json";
 results_exemplar = jsondecode(fileread("results_exemplar.json"));
 
 disp('Results_Exemplar');
@@ -31,7 +31,7 @@ test_cases(2).name = "Two";
 test_cases(2).fun  = 'prog',
 test_cases(2).args = { 2, 5, 7 };
 test_cases(2).expect = 14;
-test_cases(2).visibility = "visible"
+test_cases(2).visibility = "visible";
 test_cases(2).weight = 10;
 
 for j = 1:numel(test_cases)
