@@ -12,6 +12,8 @@
 MLM_LICENSE_TOKEN=$(shell cat $$HOME/Documents/MLM_LICENSE_TOKEN.txt)
 RESULTS_FILE=autograder/results/results.json
 
+all: push
+
 grade:
 	rm -rf autograder
 	mkdir -p autograder/results/
